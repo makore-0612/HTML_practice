@@ -6,10 +6,29 @@
     <title>Formularios</title>
 </head>
 <body>
-    <label for = "nombre">Nombre:</label> <!-- Etiquetas relacionadas a campos de formulario -->
-    <input type = "text" id = "nombre" placeholder = "John Doe" maxlength = "10"/>
-    <br />
-    <textarea name = "mensaje" id = "mensaje" placeholder = "Mensaje"></textarea>
+    <form action="" name = "contacto" id = "contacto" method =>
+        <label for = "nombre">Nombre:</label> <!-- Etiquetas relacionadas a campos de formulario -->
+        <input type = "text" id = "nombre" placeholder = "John Doe" maxlength = "10"/>
+        <br />
 
+        <textarea name = "mensaje" id = "mensaje" placeholder = "Mensaje"></textarea>
+
+        <br />
+
+        <label for="pais">País</label>
+        <select name="pais" id="pais">
+            <option value="mexico">México</option>
+            <option value="argentina">Argentina</option> <!-- Lista desplegable -->
+        </select>
+        <br />
+
+        <input type="radio" id = "español" value = "español" name = "idioma"/><label for="español">Español</label>
+        <input type="radio" id = "ingles" value = "ingles" name = "idioma"/><label for="ingles">Español</label>
+
+        <input type="checkbox" id = "terminos" name = "terminos"/><label for="terminos">Aceptar términos y condiciones</label>
+
+        <br />
+        <input type="submit" value = "Enviar datos">
+    </form>
 </body>
 </html>
